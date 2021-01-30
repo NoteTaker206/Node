@@ -1,0 +1,33 @@
+<!-- set article.title here so after we click save button, or html
+    value stays,,, this is just something with forms 
+    the default value would end up being what we passed
+-->
+
+<!-- article description prepopulates like article.title now when 
+we click save...like a default value, we have to pass first though -->
+<div class="form-group">
+  <label for="title">Title</label>
+  <input
+    required
+    value="<%= article.title %>"
+    type="text"
+    name="title"
+    id="title"
+    class="form-control"
+  />
+</div>
+<div class="form-group">
+  <label for="description">Description</label>
+  <textarea name="description" id="description" class="form-control">
+<%= article.description %></textarea
+  >
+</div>
+<div class="form-group">
+  <label for="markdown">Markdown</label>
+  <textarea required name="markdown" id="markdown" class="form-control">
+<%= article.markdown %></textarea
+  >
+</div>
+<!-- just a "/" so you can go home -->
+<a href="/" class="btn btn-secondary">Cancel</a>
+<button type="submit" class="btn btn-primary">Save</button>
