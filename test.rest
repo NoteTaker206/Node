@@ -4,3 +4,6 @@ Content-Type: application/json
 {
   "userId": 1
 }
+
+//user id when hitting a route that has a project that belongs to user with id 2
+//our authorization process handles this 
